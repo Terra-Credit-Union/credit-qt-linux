@@ -1,55 +1,11 @@
-Install Ubuntu Server 18.04 on a VPS.
+Proof of Stake (POS): The Credit blockchain is a solution with the future in mind, non resource intensive mining that creates and even playing field and allows anyone to earn from supporting the network. The Credit desktop wallet is all you need to become a Credit "Producer" and start earning new coins in real time. POS is the next step in cryptocurrency evolution which promotes true decentralization by improving accessibility, we have removed the technical and expensive POW environment to allow anyone with a modern computer to earn from supporting the blockchain.
 
--Update your Ubuntu machine.
+SMARTER TECHNOLOGY Impervious to typical attacks, the Credit blockchain completely ignores hash power and selects producers based on their balance. The absence of master nodes improves security by eliminating other forms of attack that are used in networks with fewer producers.
 
-sudo apt-get update
-sudo apt-get upgrade
+100% INCLUSIVE The Credit wallet is simple to install and produces blocks automatically, anyone with a modern computer can be setup in minutes. This increases the decentralization within the node community by making it simple and accessible with no coding or advanced skills required.
 
+FAST & FREE Sending Credit takes seconds and is virtually free, any user can group unlimited unique transactions into a batch and send all the payments at once for the low fee of 0.00001 CREDIT. Transactions are confirmed quickly by the network of nodes that are rewarded with new coins rather than transaction fee's.
 
--Install the required dependencies.
+Innovation The end goal of proof-of-stake (PoS) is identical to that of proof-of-work (PoW), they both seek to validate transactions and achieve network consensus. It’s just their processes that are different.
 
-sudo apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils python3 libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-test-dev libboost-thread-dev libboost-all-dev libboost-program-options-dev
-sudo apt-get install libminiupnpc-dev libzmq3-dev libprotobuf-dev protobuf-compiler unzip software-properties-common
-
-
--Install Berkeley DB.
-
-sudo add-apt-repository ppa:bitcoin/bitcoin
-sudo apt-get update
-sudo apt-get install libdb4.8-dev libdb4.8++-dev
-
-
--Download the daemon
-wget "https://github.com/The-Terra-Foundation/credit-qt-linux/master/credit-qt-linux.tar.gz" -O credit-qt-linux.tar.gz
-
-
--Extract the tar files.
-
-tar -xzvf credit-qt-linux.tar.gz
-
-
--Install the daemon and tools.
-
-sudo mv creditd credit-cli credit-tx /usr/bin/
-
-
--Create the config file.
-
-mkdir $HOME/.credit
-nano $HOME/.credit/credit.conf
-
-
--Paste the following lines in credit.conf.
-
-rpcuser=rpc_credit
-rpcpassword=69c863e3356d3dae95df454a1
-rpcallowip=127.0.0.1
-listen=1
-server=1
-txindex=1
-daemon=1
-
-
--Start your node with the following command.
-
-creditd
+The biggest advantage that POS has over POW is that it is much less energy intensive, because hash power plays no role in success as a producer. This solidifies the decentralization of the Credit blockchain by removing equipment cost and expertise barriers which allows us to welcome literally thousands of non-technical block producers. We believe that Credit's use of POS incentives for block producers are much more aligned with our community.
